@@ -221,10 +221,13 @@ img {
 .home__title {
     font-family: var(--h1-font);
     font-size: 2.5rem;
-    margin-bottom: var(--mb-5);
+    margin-bottom: var(--mb-3);
     color: var(--warna-pertama);
     font-style: normal;
+}
 
+.home__text {
+    margin-bottom: var(--mb-1);
 }
 
 .home__title-name {
@@ -238,22 +241,24 @@ img {
 
 .home__social-icon {
     width: max-content;
-    padding-top: var(--mb-1);
+    padding-top: var(--mb-2);
     margin-bottom: var(--mb-2);
     font-size: 3rem;
     color: var(--warna-pertama);
 }
 
-.home__spcial-icon:hover {
+.home__social-icon:hover {
     color: var(--warna-kedua);
 }
 
 .home__img {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 80px;
     width: 295px;
 }
+
+
 
 .button {
     display: inline-block;
@@ -362,9 +367,165 @@ img {
     width: 90%;
 }
 
-.skills_img {
-    width
+.skills__img {
+    width: 355px;
     border-radius: .5rem;
+}
+
+/* === SOSMED === */
+
+.sosmed {
+    background-color: var(--warna-pertama);
+    border-bottom: 2px solid var(--warna-kedua);
+    width: 100%;
+}
+
+.sosmed__content {
+    display: flex;
+    justify-content: center;
+}
+
+.h2-sosmed {
+    color: #FFFFFF;
+}
+
+.sosmed-icon {
+    color: var(--warna-ketiga);
+    font-size: var(--big-font-size);
+    padding-bottom: var(--mb-1);
+}
+
+.sosmed-icon:hover {
+    color: var(--warna-kedua);
+    border-bottom: 1px solid var(--warna-kedua);
+}
+
+
+/* === FOOTER === */
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding-top: var(--mb-1);
+    height: 150px;
+    background-color: var(--warna-pertama);
+}
+
+.footer__tittle {
+    position: relative;
+    font-size: var(--normal-font-size);
+    color: #FFFFFF;
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+    text-align: center;
+}
+
+.footer__text {
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+
+
+/* ==== MEDIA LAYOUT ==== */
+@media screen and (min-width: 768px){
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .judul-section {
+        margin-bottom: var(--mb-6);
+    }
+
+    .judul-section::after {
+        width: 80px;
+        top: 3rem;
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 1rem);
+    }
+
+    .nav__list {
+        display: flex;
+        padding-top: 0;
+    }
+
+    .nav__item {
+        margin-left: var(--mb-6);
+        margin-bottom: 0;
+    }
+
+    .nav__toogle {
+        display: none;
+    }
+
+    .nav__link {
+        color: var(--warna-kedua);
+    }
+
+    .home {
+        height: 100vh;
+    }
+
+    .home__title {
+        margin-bottom: var(--mb-1);
+    }
+
+    .home__data {
+        align-self: flex-end;
+    }
+
+    .home__social {
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        flex-direction: row;
+        align-self: flex-end;
+    }
+
+    .home__social-icon {
+        margin-bottom: 0;
+        margin-right: var(--mb-4);
+    }
+
+    .home__img {
+        width: 475px;
+        bottom: 15%;
+    }
+
+    .about__container, .skills__container {
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        text-align: initial;
+    }
+
+    .about__img img {
+        width: 300px;
+    }
+
+    .sosmed__content {
+        justify-content: center;
+    }
+
+    .sosmed-icon {
+        font-size: 100px;
+    }
+
+
+    .contact__form {
+        width: 360px;
+    }
+
+    .contact__container {
+        justify-items: center;
+    }
+
+
 }
 
 
@@ -372,9 +533,41 @@ img {
 
 
 
+/* === CONTACT === */
 
+.nav__logo-contact {
+    color: #FFFFFF;
+    font-family: var(--h1-font);
+    font-size: 1.5rem;
+}
 
+.contact__input {
+    width: 100%;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1.5px solid var(--warna-pertama);
+    outline: none;
+    margin-bottom: var(--mb-4);
+}
 
+.contact__button {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.footer__contact {
+    width: 100%;
+    text-align: center;
+    padding-top: var(--mb-1);
+    height: 150px;
+    background-color: var(--warna-pertama);
+}
 
 
 
